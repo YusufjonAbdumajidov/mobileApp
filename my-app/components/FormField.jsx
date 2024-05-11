@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { icons } from "../constants";
 
-const FormField = ({ title, value, placeholder, handleChange, otherStyles, ...props }) => {
+const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, ...props }) => {
  
   const [ showPassword, setShowPassword ] = useState(false)
 
@@ -16,7 +16,7 @@ const FormField = ({ title, value, placeholder, handleChange, otherStyles, ...pr
         value={value}
         placeholder={placeholder}
         placeholderTextColor="#7b7b8b"
-        onChangeText={handleChange}
+        onChangeText={handleChangeText}
         secureTextEntry={title === "Password" && !showPassword} />
 
         {title === "Password" && (
