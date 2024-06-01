@@ -62,7 +62,7 @@ const SignUp= () => {
               Have an account?
             </Text>
             <Link
-              href="/sign-up"
+              href="/sign-in"
               className="text-lg font-psemibold text-secondary">
               Sign In
             </Link>
@@ -74,3 +74,5 @@ const SignUp= () => {
 }
 
 export default SignUp
+
+
