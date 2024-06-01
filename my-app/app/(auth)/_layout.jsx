@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from  'expo-status-bar'
+import 'react-native-url-polyfill/auto'
 import React from 'react'
 
 const AuthLayout = () => {

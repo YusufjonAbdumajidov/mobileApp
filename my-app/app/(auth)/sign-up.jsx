@@ -2,6 +2,7 @@ import { View, Text, ScrollView, Image } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react';
 import { Link } from 'expo-router';
+import 'react-native-url-polyfill/auto'
 
 import { images } from "../../constants"
 import FormField from '../../components/FormField';
@@ -53,7 +54,7 @@ const SignUp= () => {
            />
 
            <CustomButton title="Sign Up"
-            handlePres={submit}
+            handlePres={submit()}
             containerStyles='mt-7'
             isLoading={isSubmitting} />
 
