@@ -3,6 +3,7 @@ import {  ScrollView, Image, Text, View } from 'react-native';
 import { Link } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Redirect, router } from 'expo-router';
+import 'react-native-url-polyfill/auto';
 
 import { images } from "../constants";
 import CustomButton from '../components/CustomButton';

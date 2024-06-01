@@ -16,7 +16,7 @@ const client = new Client();
 client
     .setEndpoint(config.endpoint) // Your Appwrite Endpoint
     .setProject(config.projectId) // Your project ID
-    .setPlatform(config.platform) // Your application ID or bundle ID.
+    .setPlatform(config.platform); // Your application ID or bundle ID.
 
     const account = new Account(client);
 
